@@ -1,17 +1,7 @@
 import { cloneDeep } from "lodash"
 
 const blacklistSet = new Set([
-  "top",
-  "window",
-  "self",
-  "globalThis",
-  "global",
-  "frames",
-  "parent",
-  "fetch",
-  "XMLHttpRequest",
-  "document",
-  "MutationObserver",
+"MutationObserver",
 ])
 
 const globalVarNames = new Set<PropertyKey>([
