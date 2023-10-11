@@ -111,20 +111,7 @@ export const WaterMark: FC = () => {
             )
           }
         >
-          <div
-            css={deployLogoStyle}
-            onClick={() => {
-              if (!isCloudVersion || !canUpdateAppWaterMark) {
-                window.open("https://illacloud.com", "_blank")
-              }
-            }}
-          >
-            <span>Powered by</span>
-            <Logo css={logoStyle} />
-            {isCloudVersion && canUpdateAppWaterMark && (
-              <DownIcon css={applyPopupStateStyle(popupVisible)} />
-            )}
-          </div>
+         
         </Trigger>
       )}
     </>
